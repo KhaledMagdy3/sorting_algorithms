@@ -14,7 +14,7 @@ void bubble_sort(int *array, size_t size)
 	int temp;
 	int swap;
 
-	for (i = 0; i < (size - 1); i++)
+	for (i = 0; i < (size); i++)
 	{
 		swap = 0;
 		for (j = 0; j < (size - i - 1); j++)
