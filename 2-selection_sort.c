@@ -24,11 +24,14 @@ void selection_sort(int *array, size_t size)
 				min = j;
 			}
 		}
-		temp = array[min];
-		array[min] = array[i];
-		array[i] = temp;
+		if (min != i)
+		{
+			temp = array[min];
+			array[min] = array[i];
+			array[i] = temp;
 
-		print_array(array, size);
+			print_array(array, size);
+		}
 
 	}
 }
